@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
     background-color:#111199;
-    backgruond-image : url("");
+    backgruond-image : url("./background.png");
 }
 header h1{
     color :#fff;
