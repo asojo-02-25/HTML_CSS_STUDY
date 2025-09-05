@@ -1,10 +1,20 @@
 @charset "utf-8";
 body {
     background-color:#111199;
+    backgruond-image : url("");
+}
+header h1{
+    color :#fff;
+    font-family : "Noto Sans JP", sans-serif;
+    font-size : 40px;
+    font-weight : bolder;
 }
 h1 {
     color:#0bd;
 }
-p{
+article p{
     font-size:20px;
+    line-height : 1.6;
+    text-align : right;
+    color : rgba(255,255,255,0.8);
 }
