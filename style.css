@@ -1,10 +1,12 @@
 @charset "utf-8";
 body {
-    background-color:#111199;
-    backgruond-image : url("./background.png");
+    background-color:#fff111;
+    background-image : url(background.png);
+    background-repeat : repeat-x;
+    background-repeat : repeat-y;
 }
 header h1{
-    color :#fff;
+    color :#000;
     font-family : "Noto Sans JP", sans-serif;
     font-size : 40px;
     font-weight : bolder;
@@ -16,5 +18,5 @@ article p{
     font-size:20px;
     line-height : 1.6;
     text-align : right;
-    color : rgba(255,255,255,0.8);
+    color : rgba(0,0,255,0.3);
 }
