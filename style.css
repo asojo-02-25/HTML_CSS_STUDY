@@ -1,22 +1,41 @@
 @charset "utf-8";
 body {
-    background-color:#fff111;
-    background-image : url(background.png);
-    background-repeat : repeat-x;
-    background-repeat : repeat-y;
+    background: white url(学生証.jpg) no-repeat 100px 100px;
+}
+/*ここはコメントアウトです*/
+
 }
 header h1{
-    color :#000;
+    background : white;
+    width : 1200px;
+    height : 200px;
+    margin : auto;
+    padding : 40px;
+    color : #000000;
     font-family : "Noto Sans JP", sans-serif;
     font-size : 40px;
     font-weight : bolder;
+    border-rihgt : solid 5px tomato;
 }
 h1 {
     color:#0bd;
 }
+
+article {
+    background : white;
+    border-width : 5px 5px 5px 20px;
+    border-style : double;
+    border-color : tomato;
+}
+
+.underline {
+    border-bottom: 2px solid #000; /* 太さ、線種、色をここで指定 */
+}
+
 article p{
+    background : gray;
     font-size:20px;
     line-height : 1.6;
-    text-align : right;
+    text-align : left;
     color : rgba(0,0,255,0.3);
 }
