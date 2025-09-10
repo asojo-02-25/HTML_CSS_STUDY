@@ -4,7 +4,6 @@ body {
 }
 /*ここはコメントアウトです*/
 
-}
 header h1{
     background : white;
     width : 1200px;
@@ -15,7 +14,7 @@ header h1{
     font-family : "Noto Sans JP", sans-serif;
     font-size : 40px;
     font-weight : bolder;
-    border-rihgt : solid 5px tomato;
+    border-right : solid 5px tomato;
 }
 h1 {
     color:#0bd;
@@ -39,3 +38,29 @@ article p{
     text-align : left;
     color : rgba(0,0,255,0.3);
 }
+
+ul {
+    list-style : lower-roman inside;
+}
+
+.profile{
+    background : lightblue;
+}
+
+#recepi2 {
+    color : red;
+}
+
+.container {
+    display : grid;
+    flex-direction : row;
+    align-items : center;
+    grid-template-columns: 200px 200px 200px;
+    gap : 10px;
+}
+
+.item {
+    background-color : lightblue;
+    color : blue;
+
+    }
