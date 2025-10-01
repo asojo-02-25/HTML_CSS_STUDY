@@ -17,7 +17,7 @@
 /*ローディングが完了したらローディング画面を隠す*/
 .loaded{
     opacity : 0;
-    visibility : hidden；
+    visibility : hidden;
 }
 
 /*コンテンツ部分*/
