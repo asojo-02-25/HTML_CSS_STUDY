@@ -9,7 +9,7 @@
     place-items: center;
 }
 
-.spiner {
+.spinner {
     width : 200px;
     height : 200px;
 }
@@ -21,7 +21,7 @@
 }
 
 /*コンテンツ部分*/
-.garally{
+.gallary{
     display : grid;
     gap : 10px;
     grid-template-columns : repeat(auto-fit, minmax(300px, 1fr));
