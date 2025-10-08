@@ -1,13 +1,18 @@
 const heading = document.querySelector('#heading');
 
 const keyframes = {
-    opacity: [0, 1],
-    translate: ['0 2rem', '0 0']
+    borderRadius:  [
+        '20% 50% 50% 70% / 50% 50% 70% 50%',
+        '50% 70% 50% 50% / 70% 50% 50% 50%',
+        '70% 50% 50% 20% / 50% 50% 20% 50%',
+        '50% 20% 50% 50% / 20% 50% 50% 50%',
+        ],
 }
 
 const options = {
-    duration: 2000,
-    easing : 'ease-out'
+    duration: 8000,
+    iterations: Infinity,
+    diraction: 'alternate',
 }
 
 heading.animate(keyframes,options);
