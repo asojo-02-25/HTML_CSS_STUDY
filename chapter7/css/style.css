@@ -155,7 +155,7 @@ img {
     translate: -50% -50%;
     z-index: 2;
     width: 100%;
-    font-size: max(12vh, 3rem);
+    font-size: max(12vw, 3rem);
     line-height: 1.2;
 }
 
