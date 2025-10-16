@@ -57,8 +57,7 @@ img {
 
 /*loading*/
 #loading {
-    background-color: red;
-    /*background-color: var(--light-gray);*/
+    background-color: var(--light-gray);
     position: fixed;
     z-index: 9999;
     inset: 0;
