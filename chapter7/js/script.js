@@ -55,3 +55,58 @@ window.addEventListener('load', () =>{
     );    
 });
 
+//ギャラリー　
+const mainImage = document.querySelector('.gallery-image img');
+const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
+
+//thumbImagesにマウスが重なったときにmainImageに選択している画像を表示する
+//(1)mainImageの画像の不透明度を0にし透明に
+//(2)透明になったmainImagesの部分に選択したthumbImagesを表示
+
+// for(let i = 0; i < thumbImages.length; i++){
+//     thumbImages[i].addEventListener('mouseover', (event) =>{
+//         mainImage.src = event.target.src;
+//         mainImage.animate(
+//             {
+//                 opacity: [0, 1]
+//             },
+//             {
+//                 duration: 500,
+//             }
+//         );
+//     })
+// }
+
+thumbImages.forEach((thumbImage) => {
+    thumbImage.addEventListener('mouseover', (event) =>{
+        mainImage.src = event.target.src;
+        mainImage.animate(
+            {
+                opacity: [0, 1]
+            },
+            {
+                duration: 500,
+            }
+        );
+    });
+});
+
+const menuPanel = document.querySelector('#menu-panel');
+const menuOpen = document.querySelector('#menu-open');
+const menuClose = document.querySelector('#menu-close');
+const menuOptions = {
+    duration: 600,
+    easing: 'ease',
+    fill: 'forwards',
+}
+
+// メニューを開く
+menuOpen.addEventListener('click', () => {
+    menuPanel.animate({translate: ['100vw 0', '0 0']}, menuOptions);
+});
+
+// メニューを閉じる
+menuClose.addEventListener('click', () => {
+    menuPanel.animate({translate: ['0 0', '100vw 0']},menuOptions);
+});
+
