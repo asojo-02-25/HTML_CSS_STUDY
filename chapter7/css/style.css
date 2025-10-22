@@ -271,7 +271,7 @@ shop h3 {
         fill: var(--brown);
     }
 
-    #menu-list a:hover {
+    .menu-list a:hover {
         transition: .4s;
         color: var(--green);
     }
