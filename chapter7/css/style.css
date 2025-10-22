@@ -44,7 +44,7 @@ img {
     transition: .4s;
 }
 
-.fedein{
+.fadein {
     opacity: 0;
 }
 
@@ -132,6 +132,11 @@ img {
     color: var(--light-green);
     text-decoration: none;
     font-size: 2rem;
+}
+
+.menu-list li {
+    opacity: 0;
+    margin: 1.5rem, 0;
 }
 
 /*hero*/

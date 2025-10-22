@@ -98,15 +98,68 @@ const menuOptions = {
     duration: 600,
     easing: 'ease',
     fill: 'forwards',
-}
+};
+const menuItems = document.querySelectorAll('#menu-panel li');
 
 // メニューを開く
 menuOpen.addEventListener('click', () => {
     menuPanel.animate({translate: ['100vw 0', '0 0']}, menuOptions);
+    // メニューの文字にディレイ
+    menuItems.forEach((menuItem, index) => {
+        menuItem.animate(
+            {
+                translate: ['2rem', 0],
+                opacity: [0, 1],
+            },
+            {
+                duration: 900,
+                easing: 'ease',
+                fill: 'forwards',
+                delay: 300 * index,
+            }
+        )
+    });
 });
 
 // メニューを閉じる
 menuClose.addEventListener('click', () => {
-    menuPanel.animate({translate: ['0 0', '100vw 0']},menuOptions);
+    menuPanel.animate({translate: ['0 0', '100vw 0'],},menuOptions);
+    menuItems.forEach((menuItem) => {
+        menuItem.animate({opacity: [1, 0],}, menuOptions);
+    });
 });
 
+// スクロールアニメーション
+const fadeinElements = document.querySelectorAll('.fadein');
+const fadeinKeyframes = {
+    opacity: [0, 1],
+    translate: ['0 2rem', '0 0'],
+    filter: ['blur(.4rem)', 'blur(0)'],
+}
+const fadeinOptions = {
+    duration: 1500,
+    easing: 'ease',
+    fill: 'forwards',
+};
+
+// フェードイン
+// 監視対象が画面に現れたときに実行する動作
+const animateFade = (entries, obs) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting){
+            entry.target.animate(fadeinKeyframes, fadeinOptions);
+            //一度表示されたら監視をやめる
+            obs.unObserve(entry.target);
+        };
+    }); 
+};
+
+// 監視ロボットの作成
+const fadeinObserver = new IntersectionObserver(animateFade);
+
+//.fadeinを監視するよう設定
+const fadeElements = document.querySelectorAll('.fadein');
+fadeElements.forEach((fadeElements) => {
+    fadeinObserver.observe(fadeElements);
+});
