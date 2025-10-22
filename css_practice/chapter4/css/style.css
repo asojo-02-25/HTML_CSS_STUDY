@@ -1,0 +1,122 @@
+/*課題(1) logoとnavを横に表示する*/
+/*課題(2) googlefontを適応させる*/
+/*課題(3) 背景画像がたぶんおかしい(下側の画面に模様がない)のを原因特定して修正する*/
+
+
+/*レイアウト*/
+.align-center {
+    text-align: center;
+}
+
+/*見出し*/
+.font-english{
+    font-family: 'Philopher', sans-serif;
+    font-weight: normal;
+}
+
+/*見出し*/
+.page-header {
+    padding-top: .5rem;
+}
+
+.logo {
+    width: 210px;
+}
+
+.main-nav{
+    display: flex; 
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-title,
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.page-title{
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+
+.heading-large {
+    margin-bottom: 1rem;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+
+.cover-home {
+    background-image: url("../images/cover-home-s.webp");
+}
+
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 0;
+}
+
+.about p {
+    margin-bottom: 3rem;
+}
+
+/*ボタン*/
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: #0090aa
+}
+
+/*フッター*/
+.info{
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+
+.info th {
+    text-align: center;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.info td {
+    padding: 1rem;
+}
+
+.copyright {
+    background: #432;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+}
