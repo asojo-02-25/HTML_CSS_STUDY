@@ -182,8 +182,8 @@ img {
     margin-bottom: 2rem;
 }
 
-/*gallary*/
-.gallary {
+/*gallery*/
+.gallery {
     display: flex;
     flex-direction: column-reverse;
 }

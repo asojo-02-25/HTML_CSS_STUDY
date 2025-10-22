@@ -112,10 +112,10 @@ menuOpen.addEventListener('click', () => {
                 opacity: [0, 1],
             },
             {
-                duration: 900,
+                duration: 600,
                 easing: 'ease',
                 fill: 'forwards',
-                delay: 300 * index,
+                delay: 200 * index,
             }
         )
     });
@@ -146,11 +146,10 @@ const fadeinOptions = {
 // 監視対象が画面に現れたときに実行する動作
 const animateFade = (entries, obs) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting){
             entry.target.animate(fadeinKeyframes, fadeinOptions);
-            //一度表示されたら監視をやめる
-            obs.unObserve(entry.target);
+            // 一度表示されたら監視をやめる
+            obs.unobserve(entry.target);
         };
     }); 
 };
