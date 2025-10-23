@@ -1,9 +1,4 @@
-/*課題(1) logoとnavを横に表示する
-→モバイル版のコードしか書いてないからたぶんこれで合ってる*/
-/*課題(2) googlefontを適応させる
-→font-english: philosopher のタイプミス、解決*/
-/*課題(3) 背景画像がたぶんおかしい(下側の画面に模様がない)のを原因特定して修正する
-→footerに背景画像を適用させていなかった、解決*/
+
 
 @charset "UTF-8";
 /*共通部分*/
@@ -148,4 +143,50 @@ img{
     padding: 2rem 0;
     margin-top: 6rem;
     color: #fff;
+}
+
+/*デスクトップ版*/
+@media(min-width: 800px) {
+    /*見出し*/
+    .page-title {
+        font-size: 5rem;
+    }
+
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    /*ヘッダー*/
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        max-width: 1120px;
+        margin: auto;
+        padding: 0 1.5rem;
+    }
+
+    /*HOME*/
+    .cover-home {
+        background-image: url('../images/cover-home-l.webp');;
+    }
+
+    .about {
+        margin: 4rem auto 0;
+    }
+
+    /*フッター*/
+    .page-footer {
+        background-image: url('../images/footer-l.webp');
+    }
+
+    .info th {
+        padding-left: 2.5rem;
+    }
 }
