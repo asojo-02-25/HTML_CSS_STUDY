@@ -1,7 +1,29 @@
-/*課題(1) logoとnavを横に表示する*/
-/*課題(2) googlefontを適応させる*/
-/*課題(3) 背景画像がたぶんおかしい(下側の画面に模様がない)のを原因特定して修正する*/
+/*課題(1) logoとnavを横に表示する
+→モバイル版のコードしか書いてないからたぶんこれで合ってる*/
+/*課題(2) googlefontを適応させる
+→font-english: philosopher のタイプミス、解決*/
+/*課題(3) 背景画像がたぶんおかしい(下側の画面に模様がない)のを原因特定して修正する
+→footerに背景画像を適用させていなかった、解決*/
 
+@charset "UTF-8";
+/*共通部分*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
 
 /*レイアウト*/
 .align-center {
@@ -10,7 +32,7 @@
 
 /*見出し*/
 .font-english{
-    font-family: 'Philopher', sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-weight: normal;
 }
 
@@ -96,6 +118,13 @@
     margin: auto;
     padding: 0 1.5rem;
     border-spacing: 0;
+}
+
+.page-footer {
+    background: url('../images/footer-s.webp');
+    background-size: cover;
+    background-position: center;
+    padding-top: 12rem;
 }
 
 .info th,
