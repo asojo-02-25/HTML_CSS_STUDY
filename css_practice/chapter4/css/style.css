@@ -206,7 +206,52 @@ img{
     .item p {
         font-size: .875rem;
     }
+/*CONTACT
+--------------------------------*/
+    /*ヘッダーカバー画像*/
+    .cover-contact {
+        background-image: url('../images/cover-contact-s.webp');
+    }
 
+    /*店舗情報*/
+    .location {
+        margin-bottom: 3.5rem; 
+    }
+    .location-info {
+        margin-bottom: 2rem;
+    }
+
+    /*地図*/
+    iframe {
+        width: 100%;
+    }
+
+    /*お問い合わせ*/
+    .email {
+        max-width: 100%;
+        background-color: #faf7f0;
+        border-radius: 48px;
+        padding: 1.5rem 2.5rem 2.5rem;
+        margin: 0 auto 2rem;
+    }
+
+    .email p {
+        margin: 1rem 0 2rem;
+    }
+
+    /*SNS*/
+    .sns-item {
+        margin-bottom: 2rem;
+    }
+    .sns-item .heading-medium {
+        margin-bottom: .5rem;
+    }
+    .sns-youtube {
+        aspect-ratio: 16/9;
+    }
+    .sns-youtube iframe {
+        height: 100%
+    }
     
 /*FOOTER
 ---------------------------------*/
@@ -337,12 +382,45 @@ img{
             width: 100%;
         }
 
-    /*フッター*/
-    .page-footer {
-        background-image: url('../images/footer-l.webp');
-    }
+    /*CONTACT
+    --------------------------------*/
+        /*ヘッダーカバー画像*/
+        .cover-contact {
+            background-image: url('../images/cover-contact-l.webp');
+        }
+        /*info&map*/
+        .location {
+            display: flex;
+            gap:2rem;
+        }
+        .location-info {
+            width: 32%;
+        }
+        .location-info .info th {
+            padding-left: 2rem;
+        }
+        .location-map {
+            width: 64%;
+            margin-top: 1.5rem;
+        }
+        /*sns*/
+        .sns {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+        .sns-item {
+            flex: 1;
+        }
+    
+    /*FOOTER
+    --------------------------------*/
+        .page-footer {
+            background-image: url('../images/footer-l.webp');
+        }
 
-    .info th {
-        padding-left: 2.5rem;
-    }
+        .info th {
+            padding-left: 2.5rem;
+        }
 }
